@@ -1,0 +1,53 @@
+/* Light, friendly theme for elderly users */
+:root{
+  --bg: #f6fcfa; /* very light mint */
+  --card: #ffffff;
+  --primary: #2aa59e; /* soft green-teal */
+  --muted: #6b7280;
+  --text: #21323a;
+}
+
+/* Override base */
+body{background:var(--bg);color:var(--text);font-size:17px}
+
+/* Cards
+   ensure cards are bright and soft
+*/
+.page .card{background:var(--card);border-radius:12px;padding:16px;box-shadow:0 6px 18px rgba(34,60,40,0.04)}
+
+/* Headings */
+.app-header{background:#eaf7f2;padding:14px 18px;border-bottom:1px solid rgba(33,50,58,0.08);border-radius:0 0 18px 18px;display:flex;justify-content:center}
+.app-title-group{max-width:430px;width:100%;text-align:center}
+.app-header h1{font-size:22px;margin:0;color:#1f4d46;font-weight:700;letter-spacing:0.02em}
+.app-subtitle{margin:6px 0 0;color:#4f6361;font-size:14px;line-height:1.5}
+
+/* Buttons */
+.btn.primary, .big-btn, .primary-big{background:var(--primary);color:#fff;border:none}
+.big-btn, .primary-big{border-radius:12px;padding:14px;font-size:18px;min-height:48px}
+.primary-big{height:56px;font-size:20px}
+.secondary{background:#e8f6f3;color:#0f6b61}
+
+input, textarea, select{background:#f0f2f0;border:1px solid #d9ddd9;border-radius:10px;color:var(--text);padding:12px}
+input:focus, textarea:focus, select:focus{outline:none;box-shadow:0 0 0 3px rgba(42,165,158,0.18)}
+
+.row{display:flex;justify-content:center;align-items:center;gap:12px;margin-top:12px}
+
+.preset-btn, .saved-item{background:#f8fbf8;color:#21323a}
+.preset-btn{border:1px solid #d9ddd9}
+.saved-item strong{color:#111}
+
+/* Text */
+.card-title{color:var(--text);font-weight:600}
+.app-name{color:var(--text);font-weight:700}
+.subtitle{color:var(--muted)}
+
+/* Bottom nav overrides */
+.bottom-nav{background:var(--card);border-top:1px solid rgba(33,50,58,0.04)}
+.nav-btn{color:var(--text)}
+.nav-btn.active{background:var(--primary);color:#fff}
+
+/* Utility */
+.home-container{max-width:430px;margin:0 auto;padding-bottom:12px}
+
+/* hide underlines */
+a {text-decoration:none}
